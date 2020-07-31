@@ -8,7 +8,7 @@ import br.tech.mobile.movieprime.model.Movie
 import br.tech.mobile.movieprime.repository.MoviePagedListRepository
 import io.reactivex.disposables.CompositeDisposable
 
-class MainActivityViewModel(private val movieRepository : MoviePagedListRepository) : ViewModel() {
+class PopularMoviesViewModel(private val movieRepository : MoviePagedListRepository) : ViewModel() {
 
     private val compositeDisposable = CompositeDisposable()
 

@@ -11,14 +11,14 @@ import br.tech.mobile.movieprime.R
 import br.tech.mobile.movieprime.data.api.TheMovieDBClient
 import br.tech.mobile.movieprime.data.api.TheMovieDBInterface
 import br.tech.mobile.movieprime.data.repository.NetworkState
-import br.tech.mobile.movieprime.viewModel.MainActivityViewModel
+import br.tech.mobile.movieprime.viewModel.PopularMoviesViewModel
 import br.tech.mobile.movieprime.repository.MoviePagedListRepository
 import br.tech.mobile.movieprime.adapter.PopularMoviePagedListAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: MainActivityViewModel
+    private lateinit var viewModel: PopularMoviesViewModel
 
     lateinit var movieRepository: MoviePagedListRepository
 
@@ -60,14 +60,14 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun getViewModel(): MainActivityViewModel {
+    private fun getViewModel(): PopularMoviesViewModel {
         return ViewModelProvider(this, object : ViewModelProvider.Factory {
             override fun <T : ViewModel?> create(modelClass: Class<T>): T {
                 @Suppress("UNCHECKED_CAST")
-                return MainActivityViewModel(
+                return PopularMoviesViewModel(
                     movieRepository
                 ) as T
             }
-        })[MainActivityViewModel::class.java]
+        })[PopularMoviesViewModel::class.java]
     }
 }
