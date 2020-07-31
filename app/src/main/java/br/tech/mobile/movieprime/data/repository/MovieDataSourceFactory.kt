@@ -3,7 +3,7 @@ package br.tech.mobile.movieprime.data.repository
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.DataSource
 import br.tech.mobile.movieprime.data.api.TheMovieDBInterface
-import br.tech.mobile.movieprime.Model.Movie
+import br.tech.mobile.movieprime.model.Movie
 import io.reactivex.disposables.CompositeDisposable
 
 class MovieDataSourceFactory (private val apiService : TheMovieDBInterface, private val compositeDisposable: CompositeDisposable)

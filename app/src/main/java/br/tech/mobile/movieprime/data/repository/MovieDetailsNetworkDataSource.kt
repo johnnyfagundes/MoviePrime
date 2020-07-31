@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import br.tech.mobile.movieprime.data.api.TheMovieDBInterface
-import br.tech.mobile.movieprime.Model.MovieDetails
+import br.tech.mobile.movieprime.model.MovieDetails
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 

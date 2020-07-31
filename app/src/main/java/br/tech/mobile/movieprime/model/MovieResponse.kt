@@ -1,7 +1,6 @@
-package br.tech.mobile.movieprime.Model
+package br.tech.mobile.movieprime.model
 
 
-import br.tech.mobile.movieprime.Model.Movie
 import com.google.gson.annotations.SerializedName
 
 data class MovieResponse(

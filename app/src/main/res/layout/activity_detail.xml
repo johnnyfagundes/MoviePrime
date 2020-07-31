@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/background_dark"
-    tools:context=".Activity.DetailActivity">
+    tools:context=".activity.DetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

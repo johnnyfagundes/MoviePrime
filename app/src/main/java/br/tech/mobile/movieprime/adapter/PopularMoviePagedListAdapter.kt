@@ -1,4 +1,4 @@
-package br.tech.mobile.movieprime.Adapter
+package br.tech.mobile.movieprime.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import br.tech.mobile.movieprime.R
 import br.tech.mobile.movieprime.data.repository.NetworkState
-import br.tech.mobile.movieprime.Model.Movie
-import br.tech.mobile.movieprime.Activity.DetailActivity
+import br.tech.mobile.movieprime.model.Movie
+import br.tech.mobile.movieprime.activity.DetailActivity
 import br.tech.mobile.movieprime.POSTER_BASE_URL
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.movie_list_item.view.*
@@ -88,7 +88,6 @@ class PopularMoviePagedListAdapter(private val context: Context) :
 
         fun bind(movie: Movie?, context: Context) {
             itemView.cv_movie_title.text = movie?.title
-//            itemView.cv_movie_release_date.text = movie?.releaseDate
 
             val moviePosterURL = POSTER_BASE_URL + movie?.posterPath
             Glide.with(itemView.context)

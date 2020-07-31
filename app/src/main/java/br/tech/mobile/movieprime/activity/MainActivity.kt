@@ -1,4 +1,4 @@
-package br.tech.mobile.movieprime.Activity
+package br.tech.mobile.movieprime.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,9 +11,9 @@ import br.tech.mobile.movieprime.R
 import br.tech.mobile.movieprime.data.api.TheMovieDBClient
 import br.tech.mobile.movieprime.data.api.TheMovieDBInterface
 import br.tech.mobile.movieprime.data.repository.NetworkState
-import br.tech.mobile.movieprime.ViewModel.MainActivityViewModel
-import br.tech.mobile.movieprime.Repository.MoviePagedListRepository
-import br.tech.mobile.movieprime.Adapter.PopularMoviePagedListAdapter
+import br.tech.mobile.movieprime.viewModel.MainActivityViewModel
+import br.tech.mobile.movieprime.repository.MoviePagedListRepository
+import br.tech.mobile.movieprime.adapter.PopularMoviePagedListAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -27,19 +27,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val apiService : TheMovieDBInterface = TheMovieDBClient.getClient()
-
-        movieRepository =
-            MoviePagedListRepository(
-                apiService
-            )
-
+        movieRepository = MoviePagedListRepository(apiService)
         viewModel = getViewModel()
 
-        val movieAdapter =
-            PopularMoviePagedListAdapter(
-                this
-            )
-
+        val movieAdapter = PopularMoviePagedListAdapter(this)
         val gridLayoutManager = GridLayoutManager(this, 3)
 
         gridLayoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {

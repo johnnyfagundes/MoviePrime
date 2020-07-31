@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.paging.PageKeyedDataSource
 import br.tech.mobile.movieprime.FIRST_PAGE
 import br.tech.mobile.movieprime.data.api.TheMovieDBInterface
-import br.tech.mobile.movieprime.Model.Movie
+import br.tech.mobile.movieprime.model.Movie
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 

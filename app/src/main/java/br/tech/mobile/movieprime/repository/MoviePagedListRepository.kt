@@ -1,4 +1,4 @@
-package br.tech.mobile.movieprime.Repository
+package br.tech.mobile.movieprime.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
@@ -8,7 +8,7 @@ import br.tech.mobile.movieprime.data.api.TheMovieDBInterface
 import br.tech.mobile.movieprime.data.repository.MovieDataSource
 import br.tech.mobile.movieprime.data.repository.MovieDataSourceFactory
 import br.tech.mobile.movieprime.data.repository.NetworkState
-import br.tech.mobile.movieprime.Model.Movie
+import br.tech.mobile.movieprime.model.Movie
 import br.tech.mobile.movieprime.POST_PER_PAGE
 import io.reactivex.disposables.CompositeDisposable
 

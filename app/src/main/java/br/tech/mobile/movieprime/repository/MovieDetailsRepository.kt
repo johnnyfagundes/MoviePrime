@@ -1,10 +1,10 @@
-package br.tech.mobile.movieprime.Repository
+package br.tech.mobile.movieprime.repository
 
 import androidx.lifecycle.LiveData
 import br.tech.mobile.movieprime.data.api.TheMovieDBInterface
 import br.tech.mobile.movieprime.data.repository.MovieDetailsNetworkDataSource
 import br.tech.mobile.movieprime.data.repository.NetworkState
-import br.tech.mobile.movieprime.Model.MovieDetails
+import br.tech.mobile.movieprime.model.MovieDetails
 import io.reactivex.disposables.CompositeDisposable
 
 class MovieDetailsRepository (private val apiService : TheMovieDBInterface) {

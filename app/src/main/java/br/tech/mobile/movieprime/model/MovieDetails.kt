@@ -1,4 +1,4 @@
-package br.tech.mobile.movieprime.Model
+package br.tech.mobile.movieprime.model
 
 
 import com.google.gson.annotations.SerializedName

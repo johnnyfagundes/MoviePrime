@@ -1,11 +1,11 @@
-package br.tech.mobile.movieprime.ViewModel
+package br.tech.mobile.movieprime.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
 import br.tech.mobile.movieprime.data.repository.NetworkState
-import br.tech.mobile.movieprime.Model.Movie
-import br.tech.mobile.movieprime.Repository.MoviePagedListRepository
+import br.tech.mobile.movieprime.model.Movie
+import br.tech.mobile.movieprime.repository.MoviePagedListRepository
 import io.reactivex.disposables.CompositeDisposable
 
 class MainActivityViewModel(private val movieRepository : MoviePagedListRepository) : ViewModel() {

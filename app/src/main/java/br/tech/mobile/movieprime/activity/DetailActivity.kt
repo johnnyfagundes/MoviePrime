@@ -1,4 +1,4 @@
-package br.tech.mobile.movieprime.Activity
+package br.tech.mobile.movieprime.activity
 
 import android.graphics.text.LineBreaker.JUSTIFICATION_MODE_INTER_WORD
 import android.os.Build
@@ -12,10 +12,10 @@ import br.tech.mobile.movieprime.R
 import br.tech.mobile.movieprime.data.api.TheMovieDBClient
 import br.tech.mobile.movieprime.data.api.TheMovieDBInterface
 import br.tech.mobile.movieprime.data.repository.NetworkState
-import br.tech.mobile.movieprime.Model.MovieDetails
+import br.tech.mobile.movieprime.model.MovieDetails
 import br.tech.mobile.movieprime.POSTER_BASE_URL
-import br.tech.mobile.movieprime.Repository.MovieDetailsRepository
-import br.tech.mobile.movieprime.ViewModel.SingleMovieViewModel
+import br.tech.mobile.movieprime.repository.MovieDetailsRepository
+import br.tech.mobile.movieprime.viewModel.SingleMovieViewModel
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_detail.*
 import java.text.NumberFormat
